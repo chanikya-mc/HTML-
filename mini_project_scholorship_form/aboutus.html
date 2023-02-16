@@ -1,0 +1,870 @@
+
+
+
+
+<!DOCTYPE html>
+
+
+
+<html>
+    <head><link rel="stylesheet" href="/NSP1718/struts/xhtml/styles.css" type="text/css"/>
+<script src="/NSP1718/struts/utils.js" type="text/javascript"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>NSP - About Us</title>
+        <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                background-color: #f2f2f2;
+                font-family: 'Roboto', sans-serif;
+            }
+            .form{
+                background-color: #f2f2f2;
+                height: 100%;
+                width: 100%;
+            }
+
+
+            .top-bar{
+                background-color: #272727;
+                color: #e8e8e8;
+                padding: 10px 0;
+                font-size: .9em;
+                box-shadow: 0px 2px 3px #999;
+            }
+
+            .top-bar-faq{
+                background-color: #4866af;
+                color: #fff;
+                padding: 15px;
+                font-size: 1.2em;
+                box-shadow: 0px 2px 3px #999;
+                height: 25px;
+                border-radius: 3px;
+            }
+            .top-bar ul.inline{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .top-bar ul.inline li{
+                display: inline;
+            }
+            .top-bar a{
+                color: #e2e2e2;
+                text-decoration: none;
+            }
+
+            .container{
+                width: 984px;
+                padding: 0 20px;
+                text-align: left;
+            }
+
+            .cards-container{
+                background-color: #fff;
+                padding: 15px 0;
+                border-bottom: 1px solid #dadada;
+            }
+
+            /**
+            Helper Classes
+            **/
+            .inline{
+                display: inline;
+            }
+            .block{
+                display: block;
+            }
+            .inline-block{
+                display: inline-block;
+            }
+            .left{
+                float: left;
+            }
+            .right{
+                float: right;
+            }
+            .clear{
+                clear: both;
+            }
+            .tp-bg{
+                background-color: rgba(0,0,0,.5) !important;
+            }
+            .bg-orange{
+                background-color: #f36e21 !important;
+            }
+            .bg-grey{
+                background-color: #dadada !important;
+            }
+
+            .white-text{
+                color: #fff !important;
+            }
+
+            .padding-5{
+                padding: 5px;
+            }
+            .padding-10{
+                padding: 10px;
+            }
+            .padding-15{
+                padding: 15px;
+            }
+            .padding-20{
+                padding: 20px;
+            }
+            .padding-25{
+                padding: 25px;
+            }
+            .padding-30{
+                padding: 30px;
+            }
+            .no-padding{
+                padding: 0;
+            }
+            .no-margin{
+                margin: 0;
+            }
+
+            .gap-type-default{
+                height: .75em;
+            }
+            .gap-type-1{
+                height: 5px;
+            }
+            .gap-type-2{
+                height: 10px;
+            }
+            .gap-type-3{
+                height: 15px;
+            }
+            .gap-type-4{
+                height: 20px;
+            }
+
+        </style>
+          
+        <meta http-equiv="Pragma" content="no-cache"> 
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Cache-Control" content="must-revalidate">
+        <meta http-equiv="X-Frame-Options" content="DENY">
+        <meta name="DownloadOptions" content="nosave" />
+    </head>
+    <body>
+    <center>
+
+        <link href="/NSP1718/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+
+<style>
+
+    a:hover {
+        text-decoration: none;
+    }
+
+
+    [data-tooltip] {
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    /* Hide the tooltip content by default */
+    [data-tooltip]:before,
+    [data-tooltip]:after {
+        visibility: hidden;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Position tooltip above the element */
+    [data-tooltip]:before {
+        position: absolute;
+        bottom: 150%;
+        left: 50%;
+        margin-bottom: 5px;
+        margin-left: -80px;
+        padding: 7px;
+        width: 160px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-color: #000;
+        background-color: hsla(0, 0%, 20%, 0.9);
+        color: #fff;
+        content: attr(data-tooltip);
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    /* Triangle hack to make tooltip look like a speech bubble 
+    [data-tooltip]:after {
+      position: absolute;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -5px;
+      width: 0;
+      border-top: 5px solid #000;
+      border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      content: " ";
+      font-size: 0;
+      line-height: 0;
+    }
+    */
+    /* Show tooltip content on hover */
+    [data-tooltip]:hover:before,
+    [data-tooltip]:hover:after {
+        visibility: visible;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+    }
+</style>
+<header>
+    <div class="top-bar">
+        <div class="container">
+            <ul class="inline left">
+                <li class="hide-on-mid hide-on-small">Fri Mar 04 21:53:23 IST 2022</li>
+                <!--                <li class="hide-on-mid hide-on-small">|</li>
+                                <li class="hide-on-large-only">02 June, 16</li>
+                                <li>|</li>
+                                <li>01:46 PM</li>-->
+            </ul>
+            <ul class="inline right">
+                <li class="hide-on-mid hide-on-small" style="font-weight: bold;">
+                    <a href="#">For Academic Year 2017-18</a>
+                </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!--                <li class="hide-on-mid hide-on-small">|</li>
+                                <li class="hide-on-mid hide-on-small">Screen Reader Access</li>
+                                <li class="hide-on-mid hide-on-small">|</li>
+                                <li class="hide-on-mid hide-on-small">Sitemap</li>-->
+                <li class="hide-on-mid hide-on-small">|</li>
+
+                <li class="hide-on-mid hide-on-small">Home</li>
+                <li class="hide-on-mid hide-on-small">|</li>
+                <li style="background-color: #565656; padding: 2px 5px;">
+                    <a href="#">A-</a>
+                </li>
+                <li style="background-color: #565656; padding: 2px 5px;">
+                    <a href="#">A</a>
+                </li>
+                <li style="background-color: #565656; padding: 2px 5px;">
+                    <a href="#">A+</a>
+                </li>
+                <li style="margin-left: 5px;">Hindi</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="branding" style="background-color: #fff">
+        <div class="container" style="position: relative">
+            <div class="left">
+                <table style="height: 100px;" class="logo">
+                    <tr>
+                        <td class="hide-on-small hide-on-mid">
+                            <img src="/NSP1718/img/emblem.jpg" height="70px" style="margin-right: 5px;"/>
+                        </td>
+                        <td>
+                            <img src="/NSP1718/img/emblem.jpg" height="70px" style="margin-right: 5px;" class="hide-on-large-only"/>
+                            <h2 style="margin: 0;color: #d05241; font-weight: 400">National Scholarship Portal</h2>
+                            <div style="font-size: .9em; font-weight: 400;">
+                                Ministry Of Electronics & Information Technology,<br>
+                                <span style="text-align:center">  Government of India</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style=" width: 130px; background-image: url('/NSP1718/img/dilogo.jpg'); background-repeat: no-repeat; height: 100px; background-position: right center; background-size: contain" class="right hide-on-mid  hide-on-small"></div>
+            <div style="height: 100px;  text-align: left; background-repeat: no-repeat; background-size: 440px auto; background-image: url('/NSP1718/img/srpt.jpg'); background-position: 400px bottom" class="lefth hide-on-mid hide-on-small"></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <style>
+        nav{
+            background-color: teal;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            float: left;
+        }
+        nav ul li a{
+            display: inline-block;
+            color: #e8e8e8;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav ul li a:hover{
+            background-color: #004892;
+        }
+        nav ul li:nth-child(1) a{
+            background-color: rgba(162, 49, 44, 0.7);
+        }
+        .hide-on-large-only{
+            display: none !important;
+        }
+
+
+        /**
+        Sub Menu CSS
+        **/
+        nav ul li.has-sub-menu ul{
+            display: none;
+            position: absolute;
+            box-shadow: 0px 2px 2px #444;
+            z-index: 9;
+        }
+        nav ul li.has-sub-menu ul li{
+            float: none;
+        }
+        nav ul li.has-sub-menu ul li a{
+            background-color: #4866af;
+            border-bottom: 1px solid #607ABE;
+            display: block;
+
+        }
+        nav ul li.has-sub-menu ul li a:hover{
+            background-color: #004892;
+        }
+        nav ul li.has-sub-menu:hover > ul{
+            display: block;
+        }
+        nav ul li.has-sub-menu:hover > ul.sub-menu-l2{
+            right: -450px;
+            bottom: -120px;
+        }
+        nav ul li.has-sub-menu:hover > ul.sub-menu-l3{
+            right: -270px;
+            bottom: -40px;
+        }
+        /********/
+
+        @media only screen and (max-width : 480px) {
+            .hide-on-small, .hide-on-mid-and-down{
+                display: none !important;
+            }
+            .show-on-mid-and-up, .hide-on-large-only{
+                display: inline-block !important;
+            }
+            nav ul li{
+                float: none;
+            }
+            nav ul li a{
+                display: block;
+                border-bottom: 1px solid #607ABE;
+            }
+            nav .container{
+                padding: 0;
+            }
+            nav ul li.has-sub-menu ul{
+                box-shadow: 0px 2px 5px #444;
+            }
+            ul.top-menu{
+                display: none;
+            }
+
+            table.logo tr td:nth-child(2){
+                text-align: center;
+                padding: 20px 0;
+            }
+
+        }
+
+        @media only screen and (min-width : 480px) and (max-width: 768px) {
+            .hide-on-mid, .hide-on-mid-and-up{
+                display: none !important;
+            }
+            .hide-on-large-only{
+                display: inline-block !important;
+            }
+
+            nav ul li{
+                float: none;
+            }
+            nav ul li a{
+                display: block;
+                border-bottom: 1px solid #607ABE;
+            }
+            nav .container{
+                padding: 0;
+            }
+            nav ul li.has-sub-menu ul{
+                box-shadow: 0px 2px 5px #444;
+            }
+            ul.top-menu{
+                display: none;
+            }
+            table.logo tr td:nth-child(2){
+                text-align: center;
+                padding: 20px 0;
+            }
+            table.logo{
+                width: 100%;
+            }
+            .branding .left:first-child{
+                width: 100%;
+            }
+        }
+
+    </style>
+    <nav>
+        <div class="container">
+            <div class="bg-orange">
+                <a class="hide-on-large-only" id="mobile-nav-handle" href="loginPage" style="border: none; padding: 10px 20px; color: #f2f2f2">
+                    <i class="fa fa-bars fa-lg"></i>
+                </a>
+            </div>
+            <ul class="top-menu">
+                <li>
+                    <a href="loginPage">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutusPage">
+                        About Us
+                    </a>
+                </li>
+                <li class="has-sub-menu">
+
+                    <a href="#" >
+                        Complaints<i class="fa fa-caret-down" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="complaintsPage">Register Complaint</a>
+                        </li>
+                        <li>
+                            <a href="viewComplaintStatus">View Complaint Status</a>
+                        </li>
+                        <li>
+                            <a href="http://scholarships.gov.in/mcr/">MCR Login</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub-menu">
+                    <a href="#">
+                        Services <i class="fa fa-caret-down" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="/NSP1718/public/schemeGuidelines/NSP 2.0 Operation Manual v2.0.pdf" target="_blank">
+                                NSP 2.0 User Manual
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/NSP1718/public/slider.jsp" target="_blank">
+                                Scheme Eligibility
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/NSP1718/public/schemeGuidelines/MinistryCoordinators.pdf" target="_blank">
+                                List of Ministry Co-ordinators
+                            </a>
+                        </li>
+                        <li class="has-sub-menu">
+                            <a href="">Scheme Wise State Nodal Officers</a>
+                            <ul class="sub-menu-l2">
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/UGC_NodalOfficerList.pdf" target="_blank">
+                                        UGC
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/NationalMeans-cum-MeritScholarshipScheme.pdf" target="_blank">Ministry of Minority Affairs</a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/NationalSchemeofIncentivetogirlsforSecondaryEducation.pdf" target="_blank">D/o School Education & Literacy(NSIGSE)</a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/MCMscheme.pdf" target="_blank">D/o School Education & Literacy(NMMS)</a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/List of Welfare Commissioners with mail and postal address.pdf" target="_blank">
+                                        Ministry of Labour & Employment
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/StateNodalOfHigherEducation.pdf" target="_blank">
+                                        Department of Higher Education(CSSS)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/departmentofempowermentofpersonswithdisabilites.pdf" target="_blank">
+                                        Department of Empowerment of Persons With Disabilities
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/schemeGuidelines/Nodal_Officers_List.pdf" target="_blank">
+                                        Nodal Officer of CAPFs/Assam Rifles
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/NSP1718/public/faq/biharNodalOfficerList.pdf" target="_blank">
+                                        Bihar State Nodal Officer List
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="http://aishe.gov.in/aishe/aisheCode" target="_blank">
+                                Know Your AISHE Code
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://aishe.gov.in/aishe/addInstitutePage" target="_blank">
+                                Get AISHE Code for your Institute
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="has-sub-menu">
+                     <a href="#">
+                        FAQ <i class="fa fa-caret-down" style="margin-left: 5px;"></i>
+                    </a>
+                    <ul>
+                    <li>
+                        <a href="fagPage">
+                            FAQ
+                        </a>
+                        </li>
+                      
+                     <li>
+                            <a href="/NSP1718/public/institutefaq/InstituteFAQ.pdf" target="_blank">
+                                Institute FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/NSP1718/public/contactUs.jsp" target="_self">
+                        Mail us
+                    </a>
+
+
+                </li>
+            </ul>
+            <style>
+                .search-wrap{
+                    background-color: #fff;
+                    margin-top: 7px;
+                    border-radius: 2px;
+                    height: 20px;
+                }
+                .search-wrap input[type=text]{
+                    padding: 5px 10px;
+                    border:none;
+                    border-radius: 2px;
+                }
+                .search-wrap button[type=submit]{
+                    padding: 4px;
+                    border: none;
+                    color: #e8e8e8;
+                    background-color: #272727;
+                }
+                @media only screen and (max-width: 868px){
+                    .search-wrap{
+                        display: none;
+                    }
+                }
+            </style>
+            <div class="search-wrap right hide-on-small hide-on-mid">
+                <form action="#">
+                    <input type="text" class="left" placeholder="Search..."/>
+                    <button class="left" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div class="clear"></div>
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </nav>
+    <style>
+        .top-bar-1{
+            background-color: #fff;
+            box-shadow: 0px 2px 3px #999;
+            padding: 10px 0;
+            z-index: 1;
+            border-bottom: 1px solid #dadada;
+
+        }
+        .top-bar-1 ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .top-bar-1 ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .top-bar-1 ul li a{
+            text-decoration: none;
+            color: #444;
+            font-size: 14px;
+        }
+        .top-bar-1 ul li i{
+            margin-right: 5px;
+        }
+
+    </style>
+
+    <style type="text/css"> 
+        .blink_text { 
+
+            -webkit-animation-name: blinker;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+
+            -moz-animation-name: blinker;
+            -moz-animation-duration: 1s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-iteration-count: infinite;
+            animation-name: blinker;
+            animation-duration: 1s;
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite; color: red; 
+        } 
+
+        @-moz-keyframes blinker {
+            0% { opacity: 1.0; }
+
+            50% { opacity: 0.0; }
+
+            100% { opacity: 1.0; } 
+        }
+
+        @-webkit-keyframes blinker {  
+            0% { opacity: 1.0; }
+
+            50% { opacity: 0.0; }
+
+            100% { opacity: 1.0; } 
+        } 
+
+        @keyframes blinker {  
+            0% { opacity: 1.0; } 
+
+            50% { opacity: 0.0; }      
+
+            100% { opacity: 1.0; } 
+        } 
+    </style> 
+    <div class="top-bar-1">
+        <div class="container">
+            <ul>
+                <!--                style=" background-color: #cacaca; box-shadow: 3px 3px 2px #bababa;"-->
+                <li style=" background-color: #fff;  font-weight: 500;">
+
+                    <a href="newstdRegfrmInstruction" data-tooltip="Student Applying for first time should compulsorily register. Application Id will be Login Id and Password is Date of Birth. Don't Share Application Id & PAssword with Others." id="newuserType" onclick="alert('1. Student Applying for first time should compulsorily register. Application Id will be Login Id and Password is Date of Birth. Don't Share Application Id & Password with Others.\n \n 2. Renewal will be opened soon.The students who got Scholarship in academic year 2016 - 17 & continuing the same course are eligible to apply for Renewal only.Students whose status is under process in NSP 2.0 for the academic year 2016 - 17 are requested to wait till renewal is open.');">
+                        <table>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-user-plus fa-2x" style="color: #21c465"></i>
+                                </td>
+                                <td>
+                                    New User? Register
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li class="" style=" background-color: #fff;  font-weight: 500;" >
+                    <a href="loginPage" data-tooltip="Those Student who is applying first time or did not get Scholarship last year through NSP.">
+                        <table>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-key fa-2x blink_text" style="color: #004892;"></i>
+                                </td>
+                                <td>
+                                    Login to Apply
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li style=" background-color: #fff;  font-weight: 500;">
+                    <a href="https://scholarships.gov.in/RENEWAL1718/loginPage.action" data-tooltip="Those student who got Scholarship last year through NSP willing to Renew for Current Session in the same Course. Login Id & Password are same as last year.">
+                        <!--                    <a href="#" onclick="alert('Renewal will be opened soon. The students who got Scholarship in academic year 2016-17 & continuing the same course are eligible to apply for Renewal only. Studets whose status is under process in NSP 2.0 for the academic year 2016-17 are requested to wait till renewal is open.'); return false;">-->
+                        <table>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-retweet fa-2x blink_text" style="color: #996300;"></i>
+                                </td>
+                                <td>
+                                    Apply for Renewal
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+<!--               <li style=" background-color: #fff;  font-weight: 500;">
+                      <a href="onlineInstituteSearchIndex">
+                           <table>
+                            <tr>
+                                <td>
+                                   <i class="fa fa-adn fa-2x" style="color: #21c465"></i>
+                                </td>
+                                <td>
+                                 Search Institute/School/ITI</td>
+                            </tr>
+                        </table>
+                    </a></li>-->
+                     
+                <!--                                <li class="hide-on-mid hide-on-small" style=" background-color: #fff;  font-weight: 500;">
+                                                    
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="fa fa-book fa-2x" style="color: #607ABE;"></i>
+                                                                </td>
+                                                                <td>
+                                                                    For Academic Year : 2017-18 
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    
+                                                </li>-->
+
+
+
+                <!--                <li class="hide-on-mid hide-on-small" style=" background-color: #fff;  font-weight: 500;">
+                                    <a href="">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <i class="fa fa-calendar-check-o fa-2x" style="color: #c55128"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="schemeEligibiltyPage">Check Eligibility</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </li>-->
+            </ul>
+        </div>
+    </div>
+
+
+<!--    <marquee style="font-size: 20px; color: #237a50; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" /> Student Applying for "National Fellowship & Scholarship for Higher Education of ST Students" for year 2017-18 may visit <a href="https://tribal.nic.in/nfs/" style="text-decoration: none" target="_blank">"https://tribal.nic.in/nfs/"</a>. Prime Minister's Scholarship Scheme For Central Armed Police Forces And Assam Rifles date has been extended up to 31th December, 2017. </marquee> -->
+<!--    <marquee style="font-size: 20px; color: #004892; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"   onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" />Ishan Uday Scholarship Scheme of UGC and Pre-Matric & Post-Matric Schemes for ST of Tripura, Karnataka and Meghalaya State have been on-boarded now and is open for registration. <img src="/NSP1718/img/new.gif" /> For Pre-Matric and Post-Matric Scholarship Schemes for SC, ST and OBC of  Bihar State will be made available soon. <img src="/NSP1718/img/new.gif" /> </marquee>-->
+    <!--<marquee style="font-size: 20px; color: #b30000; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" /> All Central Scholarship Schemes (Pre Matric / Post Matric / MCM / Top Class) for Fresh and Renewal will be closed on <span style="font-weight: bold">31st October, 2017</span>.</marquee>-->
+    <!--<marquee style="font-size: 20px; color: #237a50; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" /> Verification of Scholarship Applications under Central Scheme (Pre Matric / Post Matric / MCM / Top Class) for Academic Year 2017-18 has been extended for Institutes upto <span style="font-weight: bold">25th November, 2017</span> and for Districts/States/Boards up to <span style="font-weight: bold">30th November, 2017</span>. No further extension will be provided. <img src="/NSP1718/img/new.gif" /></marquee>--> 
+    <!--<marquee style="font-size: 20px; color: #1a64e6; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" />Verification of applications for these schemes by Institutes has been extended up to <span style="font-weight: bold"> 28th November, 2017</span>. No further extension will be provided.  <img src="/NSP1718/img/new.gif" /> <span style="color: #2d7c0a;"></span></marquee>--> 
+<!--  <marquee style="font-size: 20px; color: #b30000; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" /> Last date of registration of new Schools/Institutes is 31st March, 2018 only. All new institutes register on NSP portal till 31st March, 2018  , for the financial year 2018-19.</marquee>-->
+<!--    <marquee style="font-size: 20px; color: #2d7c0a; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" /> Registration/Submission of Post Matric Scholarship (PMS) for SC/ST/OBC Students of Bihar State has been extended upto 20, Mar 2018. <img src="/NSP1718/img/new.gif" /> Two incentive Schemes(University Rank Holder and Single Girl Child) and one Scholarship Scheme(PGPROF) under UGC are now open for applications.</marquee>-->
+<!--    <marquee style="font-size: 20px; color: #1a64e6; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" />Verification of applications for NEC Merit Scholarship Tripura by Institutes/Districts/State has been extended up to <span style="font-weight: bold"> 7th May, 2018</span>. <img src="/NSP1718/img/new.gif" /> <span style="color: #2d7c0a;"></span></marquee>
+    <marquee style="font-size: 20px; color: #b30000; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" /> Institute verification for three schemes of UGC (PG Indira Gandhi Scholarship for Single Girl Child, PG Scholarship University Rank Holders and PG scholarship for SC/ST Students for Pursuing Professional courses) has been extended upto 10th May,2018. </marquee>
+    -->
+
+<!--    <marquee style="font-size: 20px; color: #2d7c0a; background-color: #e8e8e8; padding: 5px; border-bottom: 1px solid #dadada;"  onmouseover="stop()" onmouseout="start()"><img src="/NSP1718/img/new.gif" /> ITI's with NCVT Code can be registered in National Scholarship Portal. Contact State/District Nodal Officers for Addition of ITI's.</marquee>-->
+</header>
+
+
+        <main>
+            <div class="container padding-15">
+                <div class="top-bar-faq">
+                    About National Scholarship Portal 
+                </div>
+                <div style="background-color: #fff; border: 1px solid #dadada;">
+                    <!--               <h3 style="color: #DD4814">About National Scholarships Portal</h3>
+                            <hr>-->
+                    <p>National Scholarships Portal is one-stop solution through which various services starting from student application, application receipt, processing, sanction and disbursal of various scholarships to Students are enabled. National Scholarships Portal is taken as Mission Mode Project under National e-Governance Plan (NeGP)
+                    </p>
+                    <h4 style="color:#1E5799">Vision</h4>
+
+                    <p style="text-align: justify">National Scholarships Portal is one-stop solution through which various services starting from student application, application receipt, processing, sanction and disbursal	of various scholarships to Students are enabled. <br> This initiative aims at providing a Simplified, Mission-oriented,	Accountable, Responsive & Transparent <strong>'SMART'</strong> System for faster & effective disposal of Scholarships applications and delivery of funds directly into beneficiaries account without any leakages.	
+                    </p>
+
+                    <h4 style="color:#1E5799">Mission</h4>
+                    <p style="text-align: justify">The Mission Mode Project (MMP) of National Scholarships Portal under the National e-Governance Plan aims	at providing common electronic portal for implementing various Scholarships schemes launched by Union Government, State Government and Union Territories across the country.	
+                    </p>
+
+                    <h4 style="color:#1E5799">Objectives</h4>
+                    <ul class="arrow-list">
+                        <li >Ensure timely disbursement of Scholarships to students
+                        </li>
+                        <li>Provide a common portal for various Scholarships schemes of Central and State Governments
+                        </li>
+                        <li>Create a transparent database of scholars
+                        </li>
+                        <li>Avoid duplication in processing
+                        </li>
+                        <li>Harmonisation of different Scholarships schemes & norms
+                        </li>
+                        <li>Application of Direct Benefit Transfer
+                        </li>
+                    </ul>
+                    <h4 style="color:#1E5799">Benefits</h4>
+                    <ul class="arrow-list">
+                        <li>Simplified process for the students
+                            <ul class="benfitsliststyles">
+                                <li> All scholarships information available under one umbrella
+                                </li>
+                                <li>Single integrated application for all scholarships
+                                </li>
+                            </ul></li>
+                        <li>Improved transparency	
+                            <ul class="benfitsliststyles">
+                                <li>System suggests the schemes for which a student is eligible
+                                </li>
+                                <li>Duplicates can be reduced to the maximum extent</li>
+                            </ul></li>
+                        <li>Helps in standardisation	
+                            <ul class="benfitsliststyles">
+                                <li>Master data for Institutions and courses at all India level
+                                </li>
+                                <li>Scholarships processing
+                                </li>
+                            </ul></li>
+                        <li>Serves as a decision support system (DSS) for Ministries and departments as up-to date information will be available on demand.
+                        </li>
+                        <li>Comprehensive MIS System to facilitate monitoring every stage of Scholarships distribution i.e. from student registration to delivery of funds
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <br><br>
+            </div>
+        </main>
+
+        
+<style>
+    footer{
+        background-color: #272727;
+        color: #f2f2f2;
+        font-size: .8em;
+    }
+</style>
+<footer>
+    <div class="container">
+        <div class="padding-10" style="text-align: center;">
+            &copy; Copyright 2018, National Scholarship Portal
+        </div>
+        <div class="padding-10" style="text-align: center;">
+            Site Best Viewed In IE-6+, Mozilla Firefox, Chrome, Safari etc...
+        </div>
+    </div>
+</footer>
+    </center>
+
+</body>
+</html>
