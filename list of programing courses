@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  border: 2px double black;
+  padding:2px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+a:hover, a:active {
+  background-color:gray;
+  color: black;
+}
+body{
+  
+  background-color: black;
+}
+.img{
+    width: 40px;
+    float: left;
+    height:40px;
+    align-items: flex-start;
+}
+.topnav {
+    overflow:hidden;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+     
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+     
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color:rgb(231, 225, 225);
+    color: black;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+.one{
+  margin-right:500px;
+  float: bottom right;
+}
+</style>
+</head>
+<body>
+  <img class="img" src="https://1.bp.blogspot.com/-RnQrZtpVCNY/YRXDHvqXI8I/AAAAAAAAAno/GPhjuz7uMEY_nXBOAK8ykxGTBdcp6cr8QCLcBGAsYHQ/s1200/W3Schools_logo.svg.png">
+  <div class="topnav">
+            <a href="tutorials.html" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">Tutorials</a>
+            <a href="#" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">References</a>
+            <a href="#" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">Exercises</a>
+            <a href="#" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">Sing Up</a>
+            <a href="#" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px;">Bootcamp</a><br><br><br>
+            <div class="topnav">
+              <a href="#"><HTML></HTML></a>
+              <a href="#">CSS</a>
+              <a href="#">JS</a>
+              <a href="#">SQL</a>
+              <a href="#">PYTHON</a>
+              <a href="#">JAVA</a>
+              <a href="#">PHP</a>
+              <a href="#">C</a>
+              <a href="#">C++</a>
+            </div>
+   <h1 style="color:gold;font-family: Arial, Helvetica, sans-serif;">Tutorials</h1>
+
+   <div>
+    <h2 class="b" style="color:gold">HTML and CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java Script</h2>
+    
+    <a href="#">Learn HTML<a href="#" float=right; style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn JavaScipt</a></a><br><br><br>
+    <a href="#">Learn CSS <a href="#" float=right;  style="text-align: center;margin-left: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn jQuery</a></a><br><br><br>
+    <a href="#">Learn Bootstrap <a href="#" float=right; style="text-align: center;margin-left: -25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn React</a></a><br><br><br>
+    <a href="#">Learn colors <a href="#" float=right; style="text-align: center;margin-left: -20x;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn JSON</a></a><br><br><br>
+    <a href="#">Learn Icons <a href="#" float=right; style="text-align: center;margin-left: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn AJAX</a></a><br><br><br>
+    <a href="#">Learn Sass <a href="#" float=right; style="text-align: center;margin-left: 15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn W3.js</a></a><br><br><br>
+    <a href="#">Learn how to <a href="#" float=right; style="text-align: center;margin-left: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn AngularJS</a></a><br><br><br>
+    <a href="#">Learn Graphics</a><br><br><br>
+     
+     
+
+    </div>
+  </div>
+   
+
+      </body>
+      </html>
